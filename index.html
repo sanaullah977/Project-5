@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotline Emergency</title>
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -35,35 +36,37 @@
           <div
             class="flex items-center p-3 gap-1 bg-green-100 justify-center rounded-full w-[120px]"
           >
-            <span class="font-bold text-lg">0</span>
+            <span id="heartCounter" class="font-bold text-lg">0</span>
             <img src="assets/heart.png" alt="" class="size-6" />
           </div>
           <div
             class="flex items-center p-3 gap-1 bg-green-100 justify-center rounded-full w-[120px]"
           >
-            <span class="font-bold text-lg">100</span>
+            <span id="coinCounter" class="font-bold text-lg">100</span>
             <img src="assets/coin.png" alt="" class="size-6" />
-          </div>
+          </div> 
           <div
             class="flex items-center p-3 text-white gap-1 bg-green-500 rounded-full w-[120px] justify-center"
           >
-            <span class="font-bold text-lg">0</span>
-            <p class="font-bold">Copy</p>
+            <span id="copyCounter" class="font-bold text-lg">0</span>
+            <p  class="font-bold">Copy</p>
           </div>
         </div>
       </div>
+      
     </nav>
+    
 
     <!-- hero section -->
 
-    <div class="w-[1920px] h-[240px]  border-2 border-red-300 bg- ">
-      <div class=" flex justify-center border-2 border-purple-200" >
-        <img src="assets/logo-dark.png" alt="" class="size-14"/>
+    <div class="w-[1920px] h-[240px] p-8  bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+      <div class=" flex justify-center p-4" >
+        <img src="assets/logo-dark.png" alt="" class="size-20"/>
       </div>
 
-      <h1 class=" flex justify-center border-2 border-yellow-200 font-bold text-lg">Emergency Service Directory</h1>
+      <h1 class=" flex justify-center p-2 text-white font-bold text-3xl">Emergency Service Directory</h1>
 
-      <p class=" flex justify-center border-2 border-blue-200 ">
+      <p class=" flex justify-center p-2 text-white font-semibold">
         Government Emergency Services at Your Fingertip – A Project by
         Government of the People’s Republic of Bangladesh
       </p>
@@ -82,7 +85,7 @@
             />
           </div>
           <div>
-            <i class="fa-solid fa-heart"></i>
+            <i id="heartIcon" class="fa-regular fa-heart"></i>
           </div>
         </div>
         <div class="p-2">
@@ -94,8 +97,8 @@
           <span class="font-bold text-lg"> 999 </span>
           <p class="bg-gray-200 text-gray-400 rounded-lg text-sm w-[53px] flex justify-center">All</p>
         </div>
-        <button class="btn btn-outline  w-[180px] h-[42px] p-2 ">Copy</button>
-        <button class="btn btn-success w-[180px] h-[42px] p-2">Call</button>
+        <button id="copyBtn" class="btn btn-outline  w-[180px] h-[42px] p-2 " > <i  class="fa-regular fa-copy"></i>Copy</button>
+        <button id="callBtn" class="btn btn-success w-[180px] h-[42px] p-2"><i class="fa-solid fa-phone"></i>Call</button>
 
       </div>
       <div class="max-w-[400px] max-h-[360px]  bg-white p-2 rounded-lg shadow-lg">
@@ -108,7 +111,7 @@
             />
           </div>
           <div>
-            <i class="fa-solid fa-heart"></i>
+           <i class="fa-regular fa-heart"></i>
           </div>
         </div>
         <div class="p-2">
@@ -120,8 +123,8 @@
           <span class="font-bold text-lg"> 999 </span>
           <p class="bg-gray-200 text-gray-400 rounded-lg text-sm w-[53px] flex justify-center">Police</p>
         </div>
-        <button class="btn btn-outline  w-[180px] h-[42px] p-2 ">Copy</button>
-        <button class="btn btn-success w-[180px] h-[42px] p-2">Call</button>
+        <button class="btn btn-outline  w-[180px] h-[42px] p-2 "><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="btn btn-success w-[180px] h-[42px] p-2"><i class="fa-solid fa-phone"></i>Call</button>
 
       </div>
       <div class="max-w-[400px] max-h-[360px]  bg-white p-2 rounded-lg shadow-lg">
@@ -134,7 +137,7 @@
             />
           </div>
           <div>
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
           </div>
         </div>
         <div class="p-2">
@@ -146,8 +149,8 @@
           <span class="font-bold text-lg"> 999 </span>
           <p class="bg-gray-200 text-gray-400 rounded-lg text-sm w-[53px] flex justify-center">Fire</p>
         </div>
-        <button class="btn btn-outline  w-[180px] h-[42px] p-2 ">Copy</button>
-        <button class="btn btn-success w-[180px] h-[42px] p-2">Call</button>
+        <button class="btn btn-outline  w-[180px] h-[42px] p-2 "><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="btn btn-success w-[180px] h-[42px] p-2"><i class="fa-solid fa-phone"></i>Call</button>
 
       </div>
       <div class="max-w-[400px] max-h-[360px]  bg-white p-2 rounded-lg shadow-lg">
@@ -160,7 +163,7 @@
             />
           </div>
           <div>
-            <i class="fa-solid fa-heart"></i>
+         <i class="fa-regular fa-heart"></i>
           </div>
         </div>
         <div class="p-2">
@@ -172,8 +175,8 @@
           <span class="font-bold text-lg"> 1994-999999 </span>
           <p class="bg-gray-200 text-gray-400 rounded-lg text-sm w-[53px] flex justify-center">Health</p>
         </div>
-        <button class="btn btn-outline  w-[180px] h-[42px] p-2 ">Copy</button>
-        <button class="btn btn-success w-[180px] h-[42px] p-2">Call</button>
+        <button class="btn btn-outline  w-[180px] h-[42px] p-2 "><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="btn btn-success w-[180px] h-[42px] p-2"><i class="fa-solid fa-phone"></i>Call</button>
 
       </div>
       <div class="max-w-[400px] max-h-[360px]  bg-white p-2 rounded-lg shadow-lg">
@@ -186,7 +189,7 @@
             />
           </div>
           <div>
-            <i class="fa-solid fa-heart"></i>
+           <i class="fa-regular fa-heart"></i>
           </div>
         </div>
         <div class="p-2">
@@ -198,8 +201,8 @@
           <span class="font-bold text-lg"> 109 </span>
           <p class="bg-gray-200 text-gray-400 rounded-lg text-sm w-[53px] flex justify-center">Help</p>
         </div>
-        <button class="btn btn-outline  w-[180px] h-[42px] p-2 ">Copy</button>
-        <button class="btn btn-success w-[180px] h-[42px] p-2">Call</button>
+        <button class="btn btn-outline  w-[180px] h-[42px] p-2 "><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="btn btn-success w-[180px] h-[42px] p-2"><i class="fa-solid fa-phone"></i>Call</button>
 
       </div>
       <div class="max-w-[400px] max-h-[360px]  bg-white p-2 rounded-lg shadow-lg">
@@ -212,7 +215,7 @@
             />
           </div>
           <div>
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
           </div>
         </div>
         <div class="p-2">
@@ -224,8 +227,8 @@
           <span class="font-bold text-lg"> 106 </span>
           <p class="bg-gray-200 text-gray-400 rounded-lg text-sm w-[53px] flex justify-center">GOVT.</p>
         </div>
-        <button class="btn btn-outline  w-[180px] h-[42px] p-2 ">Copy</button>
-        <button class="btn btn-success w-[180px] h-[42px] p-2">Call</button>
+        <button class="btn btn-outline  w-[180px] h-[42px] p-2 "><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="btn btn-success w-[180px] h-[42px] p-2"><i class="fa-solid fa-phone"></i>Call</button>
 
       </div>
       <div class="max-w-[400px] max-h-[360px]  bg-white p-2 rounded-lg shadow-lg">
@@ -238,7 +241,7 @@
             />
           </div>
           <div>
-            <i class="fa-solid fa-heart"></i>
+          <i class="fa-regular fa-heart"></i>
           </div>
         </div>
         <div class="p-2">
@@ -250,8 +253,8 @@
           <span class="font-bold text-lg"> 16216 </span>
           <p class="bg-gray-200 text-gray-400 rounded-lg text-sm w-[63px] flex justify-center">Electricity</p>
         </div>
-        <button class="btn btn-outline  w-[180px] h-[42px] p-2 ">Copy</button>
-        <button class="btn btn-success w-[180px] h-[42px] p-2">Call</button>
+        <button class="btn btn-outline  w-[180px] h-[42px] p-2 "><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="btn btn-success w-[180px] h-[42px] p-2"><i class="fa-solid fa-phone"></i>Call</button>
 
       </div>
       <div class="max-w-[400px] max-h-[360px]  bg-white p-2 rounded-lg shadow-lg">
@@ -264,7 +267,7 @@
             />
           </div>
           <div>
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
           </div>
         </div>
         <div class="p-2">
@@ -276,8 +279,8 @@
           <span class="font-bold text-lg"> 16445 </span>
           <p class="bg-gray-200 text-gray-400 rounded-lg text-sm w-[53px] flex justify-center">NGO</p>
         </div>
-        <button class="btn btn-outline  w-[180px] h-[42px] p-2 ">Copy</button>
-        <button class="btn btn-success w-[180px] h-[42px] p-2">Call</button>
+        <button class="btn btn-outline  w-[180px] h-[42px] p-2 "><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="btn btn-success w-[180px] h-[42px] p-2"><i class="fa-solid fa-phone"></i>Call</button>
 
       </div>
       <div class="max-w-[400px] max-h-[360px]  bg-white p-2 rounded-lg shadow-lg">
@@ -290,7 +293,7 @@
             />
           </div>
           <div>
-            <i class="fa-solid fa-heart"></i>
+           <i class="fa-regular fa-heart"></i>
           </div>
         </div>
         <div class="p-2">
@@ -302,10 +305,13 @@
           <span class="font-bold text-lg"> 163 </span>
           <p class="bg-gray-200 text-gray-400 rounded-lg text-sm w-[53px] flex justify-center">Travel</p>
         </div>
-        <button class="btn btn-outline  w-[180px] h-[42px] p-2 ">Copy</button>
-        <button class="btn btn-success w-[180px] h-[42px] p-2">Call</button>
+        <button  class="btn btn-outline  w-[180px] h-[42px] p-2 "><i class="fa-regular fa-copy"></i>Copy</button>
+        <button  class="btn btn-success w-[180px] h-[42px] p-2"><i class="fa-solid fa-phone"></i>Call</button>
 
       </div>
+      <script src="index.js"></script>
+      <script src="copy.js"></script>
+      <script src="coin.js"></script>
       
     </div>
   </body>
