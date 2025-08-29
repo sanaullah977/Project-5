@@ -345,10 +345,214 @@ callBtn9.addEventListener('click', function(){
 });
 
 
+// Copy oparetion Section-----------------------
+
+ document.getElementById('copyBtn1');
+copyBtn1.addEventListener('click', function(){
+
+    let card = copyBtn1.closest("div.md\\:w-\\[400px\\]");
+    let number = card.querySelector("span").textContent;
+
+navigator.clipboard.writeText(number)
+      .then(() => {
+        alert("Copied The Text: " + number);
+      })
+      .catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+
+});
+
+ document.getElementById('copyBtn2');
+copyBtn2.addEventListener('click', function(){
+
+    let card = copyBtn2.closest("div.md\\:w-\\[400px\\]");
+    let number = card.querySelector("span").textContent;
+
+navigator.clipboard.writeText(number)
+      .then(() => {
+        alert("Copied The Text: " + number);
+      })
+      .catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+
+});
+
+ document.getElementById('copyBtn3');
+copyBtn3.addEventListener('click', function(){
+
+    let card = copyBtn3.closest("div.md\\:w-\\[400px\\]");
+    let number = card.querySelector("span").textContent;
+
+navigator.clipboard.writeText(number)
+      .then(() => {
+        alert("Copied The Text: " + number);
+      })
+      .catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+
+});
+
+ document.getElementById('copyBtn4');
+copyBtn4.addEventListener('click', function(){
+
+    let card = copyBtn4.closest("div.md\\:w-\\[400px\\]");
+    let number = card.querySelector("span").textContent;
+
+navigator.clipboard.writeText(number)
+      .then(() => {
+        alert("Copied The Text: " + number);
+      })
+      .catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+
+});
+
+ document.getElementById('copyBtn5');
+copyBtn5.addEventListener('click', function(){
+
+    let card = copyBtn5.closest("div.md\\:w-\\[400px\\]");
+    let number = card.querySelector("span").textContent;
+
+navigator.clipboard.writeText(number)
+      .then(() => {
+        alert("Copied The Text: " + number)
+      })
+      .catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+
+});
+
+ document.getElementById('copyBtn6');
+copyBtn6.addEventListener('click', function(){
+
+    let card = copyBtn6.closest("div.md\\:w-\\[400px\\]");
+    let number = card.querySelector("span").textContent;
+
+navigator.clipboard.writeText(number)
+      .then(() => {
+        alert("Copied The Text: " + number)
+      })
+      .catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+
+});
+
+ document.getElementById('copyBtn7');
+copyBtn7.addEventListener('click', function(){
+
+    let card = copyBtn7.closest("div.md\\:w-\\[400px\\]");
+    let number = card.querySelector("span").textContent;
+
+navigator.clipboard.writeText(number)
+      .then(() => {
+        alert("Copied The Text: " + number);
+      })
+      .catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+
+});
+
+ document.getElementById('copyBtn8');
+copyBtn8.addEventListener('click', function(){
+
+    let card = copyBtn8.closest("div.md\\:w-\\[400px\\]");
+    let number = card.querySelector("span").textContent;
+
+navigator.clipboard.writeText(number)
+      .then(() => {
+        alert("Copied The Text: " + number);
+      })
+      .catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+
+});
+
+ document.getElementById('copyBtn9');
+copyBtn9.addEventListener('click', function(){
+
+    let card = copyBtn9.closest("div.md\\:w-\\[400px\\]");
+    let number = card.querySelector("span").textContent;
+
+navigator.clipboard.writeText(number)
+      .then(() => {
+        alert("Copied The Text: " + number);
+      })
+      .catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+
+});
+
+
 // Call History Section-----------------------
 
+// document.getElementById("callBtn1").addEventListener("click",function() {
+//     let card = document.getElementById("callBtn1").closest("div.md\\:w-\\[400px\\]");
+    
+//     let title = card.querySelector("h1").textContent;
+//     let number = card.querySelector("span").textContent;
+    
+//     let recordDiv= document.createElement("div");
+//     recordDiv.textContent = 'called: ${title} -${number}';
+//     recordDiv.classList.add("p-2", "border", "border-gray-300", "rounded", "mb-2");
 
+//     document.getElementById("recordContainer").appendChild(recordDiv);
+// });
 
+const callData = [];
+const callButtons = document.querySelectorAll(".callBtn1");
+const historyContainer = document.getElementById("callHistory");
 
+callButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    const parentCard = this.closest(".cardName");
+    const name = parentCard.querySelector(".serviceName").innerText;
+    const number = parentCard.querySelector(".serviceNumber").innerText;
 
+    const data = {
+      name: name,
+      number: number,
+      date: new Date().toLocaleTimeString(),
+    };
+
+    callData.push(data);
+
+    // নতুন call history append করা
+    const div = document.createElement("div");
+    div.innerHTML = `
+      <div class="flex justify-between items-center p-3 bg-gray-100 rounded-md">
+        <div>
+          <h4 class="font-semibold">${data.name}</h4>
+          <p class="text-gray-600">${data.number}</p>
+        </div>
+        <p class="text-sm">${data.date}</p>
+      </div>
+    `;
+    historyContainer.appendChild(div);
+
+    const li = document.createElement("li");
+    li.className = "flex justify-between items-center p-3 bg-gray-100 rounded-md mb-2";
+
+    li.innerHTML = `
+      <div>
+        <h4 class="font-semibold">${data.name}</h4>
+        <p class="text-gray-600">${data.number}</p>
+      </div>
+      <p class="text-sm">${data.date}</p>
+    `;
+
+    historyContainer.appendChild(li);
+
+    // scroll সর্বশেষ কল এ নেমে আসবে
+    historyContainer.scrollTop = historyContainer.scrollHeight;
+  });
+});
     

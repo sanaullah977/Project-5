@@ -19,7 +19,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-green-50">
+  <body class="bg-green-50 md:h-[1650px]">
     <nav class="bg-white">
       <div class="max-w-[1800px] max-h flex justify-between p-6">
         <div class="flex items-center gap-2 max-w-[195px] max-h-[50px]">
@@ -82,10 +82,12 @@
 
     <!-- button section -->
 
-    <div class="flex gap-5">
-      <div class="p-6 grid grid-cols-2 md:grid-cols-3 gap-8 md:w-[1370px]">
+    <div
+      class="grid grid-flow-row md:grid-flow-col p-6 md:w-[1660px] md:h-[1140px]"
+    >
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:w-[1370px]">
         <div
-          class="md:w-[400px]   bg-white p-2 rounded-lg shadow-lg"
+          class="md:w-[400px] md:h-[360px] bg-white p-2 rounded-lg shadow-lg cardName"
         >
           <div class="flex justify-between md:w-360px p-2">
             <div>
@@ -100,7 +102,7 @@
             </div>
           </div>
           <div class="p-2">
-            <h1 class="font-bold">National Emergency Number</h1>
+            <h1 class="font-bold serviceName">National Emergency Number</h1>
             <p class="text-gray-400">National Emergency</p>
           </div>
 
@@ -112,18 +114,24 @@
               All
             </p>
           </div>
-          <button
-            id="copyBtn1"
-            class="btn btn-outline md:w-[180px] md:h-[42px] p-2 copySel"
-          >
-            <i class="fa-regular fa-copy"></i>Copy
-          </button>
-          <button
-            id="callBtn1"
-            class="btn btn-success md:w-[180px] md:h-[42px] p-2 callSel"
-          >
-            <i class="fa-solid fa-phone"></i>Call
-          </button>
+          <div class="flex gap-1">
+            <div>
+              <button
+                id="copyBtn1"
+                class="btn btn-outline md:w-[180px] md:h-[42px] p-2 copySel"
+              >
+                <i class="fa-regular fa-copy"></i>Copy
+              </button>
+            </div>
+            <div id="recordContainer">
+              <button
+                id="callBtn1"
+                class="btn btn-success md:w-[180px] md:h-[42px] p-2 callSel"
+              >
+                <i class="fa-solid fa-phone"></i>Call
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="md:w-[400px] md:h-[360px] bg-white p-2 rounded-lg shadow-lg"
@@ -453,20 +461,23 @@
             <i class="fa-solid fa-phone"></i>Call
           </button>
         </div>
-        <!-- Call history Section -->
-
-        <div class="main-class-section md:w-[400px] md:h-[1140px] border-2 border-red-500">
-          <div class="flex justify-between items-center border-2  border-blue-500">
-            <h1 class="font-semibold"><i class="fa-regular fa-clock text-gray-300 text-lg"></i>Call History</h1>
-            <button
-              class="md:w-[115px] md:h-[52px] rounded-full text-white bg-green-500"
-            >
-              Clear
-            </button>
-          </div>
-        </div>
-
         <script src="index.js"></script>
+      </div>
+      <!-- call history section -->
+
+      <div
+        class="main-class-section w-[400px] md:h-[1140px] p-6 rounded-md bg-white border-2 border-red-500 callHistory"
+      >
+        <div class="flex justify-between items-center ">
+          <h1 class="font-semibold">
+            <i class="fa-regular fa-clock text-gray-300 text-lg"></i>Call
+            History
+          </h1>
+          <button class="btn btn-success rounded-full md:w-[80px] md:h-[36px]">
+            Clear
+          </button>
+          <ul id="callHistory"></ul>
+        </div>
       </div>
     </div>
   </body>
