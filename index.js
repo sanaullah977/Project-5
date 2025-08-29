@@ -208,10 +208,10 @@ callBtn1.addEventListener('click', function(){
     if( currentCoin >= 20 ){
         currentCoin -=20;
         coinCounter.innerText = currentCoin;
-        alert("কল করা হচ্ছে ");
+        alert("To call the National Emergency Number, please dial 999.");
     }
     else(
-        alert("আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই।")
+        alert("999 নম্বরটিতে কল করার জন্য আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই।  Please Recharge Minimum Amount of 20 coin. ")
     )
     
 });
@@ -224,10 +224,10 @@ callBtn2.addEventListener('click', function(){
     if( currentCoin >= 20 ){
         currentCoin -=20;
         coinCounter.innerText = currentCoin;
-        alert("কল করা হচ্ছে ");
+        alert("To call the Police, please dial 999.");
     }
     else(
-        alert("আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই।")
+        alert("999 নম্বরটিতে কল করার জন্য আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই। Please Recharge Minimum Amount of 20 coin.")
     )
     
 });
@@ -240,10 +240,10 @@ callBtn3.addEventListener('click', function(){
     if( currentCoin >= 20 ){
         currentCoin -=20;
         coinCounter.innerText = currentCoin;
-        alert("কল করা হচ্ছে ");
+        alert("To call the Fire Service, please dial 999.");
     }
     else(
-        alert("আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই।")
+        alert("999 নম্বরটিতে কল করার জন্য আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই। Please Recharge Minimum Amount of 20 coin.")
     )
     
 });
@@ -256,10 +256,10 @@ callBtn4.addEventListener('click', function(){
     if( currentCoin >= 20 ){
         currentCoin -=20;
         coinCounter.innerText = currentCoin;
-        alert("কল করা হচ্ছে ");
+        alert("To call the Ambulance , please dial 1994-999999. ");
     }
     else(
-        alert("আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই।")
+        alert("1994-999999 নম্বরটিতে কল করার জন্য আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই। Please Recharge Minimum Amount of 20 coin.")
     )
     
 });
@@ -272,10 +272,10 @@ callBtn5.addEventListener('click', function(){
     if( currentCoin >= 20 ){
         currentCoin -=20;
         coinCounter.innerText = currentCoin;
-        alert("কল করা হচ্ছে ");
+        alert("To call the Women & child Helpline , please dial 109. ");
     }
     else(
-        alert("আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই।")
+        alert("109 নম্বরটিতে কল করার জন্য আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই। Please Recharge Minimum Amount of 20 coin.")
     )
     
 });
@@ -288,10 +288,10 @@ callBtn6.addEventListener('click', function(){
     if( currentCoin >= 20 ){
         currentCoin -=20;
         coinCounter.innerText = currentCoin;
-        alert("কল করা হচ্ছে ");
+        alert(" To call the Anti-Corruption, please dial 106.");
     }
     else(
-        alert("আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই।")
+        alert("106 নম্বরটিতে কল করার জন্য আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই। Please Recharge Minimum Amount of 20 coin.")
     )
     
 });
@@ -304,10 +304,10 @@ callBtn7.addEventListener('click', function(){
     if( currentCoin >= 20 ){
         currentCoin -=20;
         coinCounter.innerText = currentCoin;
-        alert("কল করা হচ্ছে ");
+        alert("To call the Electricity Hotline , please dial 16216.");
     }
     else(
-        alert("আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই।")
+        alert("16216 নম্বরটিতে কল করার জন্য আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই। Please Recharge Minimum Amount of 20 coin.")
     )
     
 });
@@ -320,10 +320,10 @@ callBtn8.addEventListener('click', function(){
     if( currentCoin >= 20 ){
         currentCoin -=20;
         coinCounter.innerText = currentCoin;
-        alert("কল করা হচ্ছে ");
+        alert("To call the Brac , please dial 16445.");
     }
     else(
-        alert("আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই।")
+        alert("16445 নম্বরটিতে কল করার জন্য আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই। Please Recharge Minimum Amount of 20 coin.")
     )
     
 });
@@ -336,13 +336,17 @@ callBtn9.addEventListener('click', function(){
     if( currentCoin >= 20 ){
         currentCoin -=20;
         coinCounter.innerText = currentCoin;
-        alert("163 কল করা হচ্ছে ");
+        alert("To call the Bangladesh Railway , please dial 163 . ");
     }
     else(
-        alert("আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই।")
+        alert(" 163 নম্বরটিতে কল করার জন্য আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই। Please Recharge Minimum Amount of 20 coin.")
     )
     
 });
+
+
+// Call History Section-----------------------
+
 
 
 
